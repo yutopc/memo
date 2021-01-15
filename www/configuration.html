@@ -1,0 +1,39 @@
+<ons-page id="conf-page">
+    <ons-toolbar>
+      <div class="left"><ons-back-button>戻る</ons-back-button></div>
+        <div class="center">設定</div>
+    </ons-toolbar>
+    <p>文字の大きさ</p>
+<ons-row>
+      <ons-col width="40px" style="text-align: center; line-height: 31px;">
+        <ons-icon icon="md-zoom-out"></ons-icon>
+      </ons-col>
+      <ons-col>
+        <ons-range style="width: 100%;" value="50" ng-model="volume"></ons-range>
+      </ons-col>
+      <ons-col width="40px" style="text-align: center; line-height: 31px;">
+        <ons-icon icon="md-zoom-in"></ons-icon>
+      </ons-col>
+    </ons-row>
+<p>文字の色</p>
+<div class="select">
+<ons-select id='choose-sel' onchange='editSelects(event)'><option value='black' selected>black</option><option value='red'>red</option><option value='blue'>blue</option><option value='green'>green</option></ons-select>
+</div>
+
+<ons-list-header>カテゴリー編集</ons-list-header>
+    <ons-list-item>
+      <div class="center">
+        カテゴリー一覧
+      </div>
+      <div class="right">
+     <span id="sw">   <ons-switch id="switch"></ons-switch></span>
+      </div>
+    </ons-list-item>
+
+    <div style="text-align: center; margin-top: 20px;" id="category">
+    
+  </div>
+
+  <div id="msg">
+  </div>
+</ons-page>
